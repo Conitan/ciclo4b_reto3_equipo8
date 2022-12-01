@@ -25,7 +25,7 @@ class AuthenticationPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Chat App - Autenticación")),
+      appBar: AppBar(title: const Text("Chat App - Equipo 8")),
       body: SafeArea(
         child: Center(
           child: Column(

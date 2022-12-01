@@ -1,7 +1,7 @@
+import 'package:f_chat_template/config/configuracion.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:loggy/loggy.dart';
-import 'config/configuration.dart';
 import 'ui/my_app.dart';
 
 Future<void> main() async {
@@ -16,13 +16,13 @@ Future<void> main() async {
   // firebase
   await Firebase.initializeApp(
       options: const FirebaseOptions(
-    apiKey: Configuration.apiKey,
-    authDomain: Configuration.authDomain,
-    databaseURL: Configuration.databaseURL,
-    projectId: Configuration.projectId,
+    apiKey: Configuracion.apiKey,
+    authDomain: Configuracion.authDomain,
+    databaseURL: Configuracion.databaseURL,
+    projectId: Configuracion.projectId,
     // storageBucket: Configuration.storageBucket,
-    messagingSenderId: Configuration.messagingSenderId,
-    appId: Configuration.appId,
+    messagingSenderId: Configuracion.messagingSenderId,
+    appId: Configuracion.appId,
     // measurementId: Configuration.measurementId),
   ));
   runApp(const MyApp());
